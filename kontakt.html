@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Kontakt</title>
+</head>
+<header>
+    <div class="header">
+        <a href="./index.html" class="logo"><img src="medien/camera.png"> </a>
+        <div class="header-right">
+            <a  href="index.html">Home</a>
+            <a href="gallery.html">Galerie</a>
+            <a class="active" href="kontakt.html">Kontakt</a>
+        </div>
+    </div>
+</header>
+<body>
+<div class="container">
+    <form id="form" class="form">
+        <h2>Ihre Anfrage</h2>
+        <div class="form-control">
+            <label for="username">Name</label>
+            <input type="text" id="username" placeholder="Name eingeben" />
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="username">Vorname</label>
+            <input type="text" id="vorname" placeholder="Vorname eingeben"/>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email eingeben" />
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="tel">Telefon</label>
+            <input type="number" id="tel" placeholder="Telefonnummer eingeben"/>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="monat">Wunschdatum</label>
+            <input type="date" id="monat" placeholder="Datum auswählen">
+        </div>
+        <div class="auflistung">
+        <label>Art der Forderung:</label> <br />
+        <input type="radio" name="color" value="hochzeit" /> Hochzeitsfotografie <br />
+        <input type="radio" name="color" value="porträt" /> Porträtfotografie <br />
+        <input type="radio" name="color" value="familie" /> Familienfotos <br />
+        </div>
+
+        <div class="form-control">
+            <label for="nachricht">Nachricht</label>
+            <input type="text" id="nachricht" placeholder="Nachricht eingeben" />
+            <small>Error message</small>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+<script src="js/client-validierung.js"></script>
+     </body>
+<footer>
+    <p class="footer">©by Nadine und Anina</p>
+</footer>
+</html>
