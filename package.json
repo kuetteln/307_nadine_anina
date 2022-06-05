@@ -7,7 +7,7 @@
     "upload": "node 01_Get_Post/03_Solutions/upload/upload2.js",
     "puzzleserver": "node 81_Puzzleserver/00_Demo/server2.js",
     "schoolserver": "node 82_Schoolserver/03_Solutions/server.js",
-    "registrationserver": "node 12b_validation_server/00_Demo/register-server/server.js",
+    "registrationserver": "node server/register-server/server.js",
     "loggerserver": "set NODE_ENV=development && node 13a_Logging/00_Demo/register-server/server.js",
     "guitarserver": "node -r esm 89_Manufacturer/01_Intro/server.js"
   },

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Kontakt</title>
+</head>
+<header>
+    <div class="header">
+        <a href="index.html" class="logo"><img src="medien/camera.png"> </a>
+        <div class="header-right">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Galerie</a>
+            <a class="active" href="kontakt.html">Kontakt</a>
+        </div>
+    </div>
+</header>
+<body>
+<div class="container">
+    <form id="form" class="form">
+        <h2>Ihre Anfrage</h2>
+        <div class="form-control">
+            <label for="name">Name*</label>
+            <input type="text" id="name" placeholder="Name eingeben"/>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="vorname">Vorname*</label>
+            <input type="text" id="vorname" maxlength="40" placeholder="Vorname eingeben"/>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="email">Email*</label>
+            <input type="email" id="email" placeholder="Email eingeben"/>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="telefon">Telefon*</label>
+            <input type="number" id="telefon" placeholder="Telefonnummer eingeben"/>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="forderung">Art der Forderung:*</label>
+            <select id="forderung">
+                <option value="0" selected>-Bitte auswählen-</option>
+                <option value="1">Hochzeitsreportage</option>
+                <option value="2">Familienfoto</option>
+                <option value="3">Porträt</option>
+                <option value="4">Pärchenbilder</option>
+            </select>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="monat">Wunschdatum*</label>
+            <input type="date" id="monat" placeholder="Datum auswählen">
+            <small>Error message</small>
+        </div>
+        <div class="auflistung">
+            <label>Ort*</label> <br/>
+            <input type="radio" name="color" value="indoor" checked/> Indoor <br/>
+            <input type="radio" name="color" value="outdoor"/> Outdoor <br/>
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+            <label>Nachricht</label>
+            <textarea type="text" rows="15" cols="50" maxlength="2500" id="nachricht">
+  </textarea>
+            <small>Error message</small>
+        </div>
+
+        <button type="submit">Senden</button>
+    </form>
+
+    <script src="js/client-validierung.js"></script>
+
+</div>
+</body>
+
+<footer>
+    <p class="footer">©by Nadine und Anina</p>
+</footer>
+</html>
